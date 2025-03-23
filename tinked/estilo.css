@@ -1,0 +1,544 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #cebbff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /*bloco p zerar margin e padding (espaçamento entre os elementos), cor de fundo, largura geral da fonte e fonte*/
+}
+*{
+    margin: 0; /*esse bloco de codigo é basicamente para reforçar as estruturas definidas no bloco a cima */
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+/*parte da barra de navegaçãO*/
+
+/*disposição das coisas na navbar*/
+}
+nav {
+    display: flex;              
+    align-items: center;        
+    gap: 15px;
+  }
+
+/*estilização geral da navbar*/
+header{
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2d2f54;
+    border-bottom: 5px solid #fff;
+}
+
+li, a{
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo img {
+    size: 1rem;
+}
+
+.lupa{
+align-items: center;
+gap: 10px;
+
+}
+
+.lupa button, .bolsinha button{
+    background-color: #2d2f54;
+    border: #2d2f54;
+    color: #cebbff;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.lupa button:hover {
+    transform: scale(1.5);
+}
+
+.bolsinha button:hover {
+    transform: scale(1.5);
+}
+
+.navbar-top{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar {
+    background-color: #2d2f54;
+    color: #d4d4f5;
+    padding: 20px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #bca2fd;
+    gap: 20px;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;            
+    justify-content: center;   
+    gap: 20px;                 
+    list-style: none;
+    margin: 0;
+    padding: 0px 0;            
+    display: flex;              
+    list-style: none;           
+    margin: 0;                  
+    padding: 0;               
+    gap: 20px; 
+} 
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    align-items: center;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.nav-links li a:hover{
+    color: #c4b9ff;
+
+}
+
+
+.search-bar{
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.search-bar input {
+    padding: 8px 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: #cebbff;
+    color: #2d2f54;
+    margin-left: 17px;
+    width: px;
+    outline: 0;
+}
+
+/*banner*/
+.banner-fofo img {
+    width: 100%; 
+    max-height: 400px;
+    padding-top: 96px; 
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 5px solid #fff;
+
+}
+
+/*vitrine*/
+.titulo1 {
+    font-size: 20px !important;
+    text-align: center !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    padding: 10px !important;
+    background-color: #9696d2;
+    border-radius: 60px !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important;
+    width: 35%;
+    margin: 0 auto; 
+    padding-bottom: 10px; 
+}
+
+
+.desconto {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #2d2f54;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+    
+    /* Lista de cards */
+    .lista-produtos {
+        display: flex;               /* arruma a posição dos cards (lado a lado) */
+        gap: 20px;                   /* espaça entre os cards */
+        align-items: center;
+    }
+    .lista-produtos2 {
+        display: flex;
+        gap: 20px;                   
+        align-items: center;
+    }
+    .lista-produtos3 {
+        display: flex;
+        gap: 20px;                   
+        align-items: center;
+    }
+    /* Estilo do card */
+    .card-item {
+        list-style: none;
+        background-color: #a7a7e1;  /* fundo do card */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        overflow: hidden;           /* p o conteúdo n sair do card */
+        width: 15%;                /* largura fixa */
+        text-align: center;
+        padding: 8px;
+        margin: 20px 10px;
+        transition: 0.3s, box-shadow 0.3s;;
+    }
+    
+.card-item:hover {
+    transform: scale(1.05); /* aumenta o card */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #7f7fb8;
+}
+
+    .card-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+    .card-image {
+        margin-bottom: 10px;
+        size: 100px;
+        width: 100%;                /* Imagem ocupa toda a largura do card */
+        height: auto;               /* Mantém proporção da imagem */
+        display: block;            /* Garante que a imagem seja um bloco */
+    }
+    
+    /* texto de cima do card */
+    .card-item h3 {
+        font-size: 15px;
+        font-weight: 550;
+        color: #2d2f54;
+        text-align: center;
+        margin-top: 10px;
+        margin: 6px;
+        margin-bottom: 3px;
+    }
+ 
+    .preco {
+        margin-top: 5px;
+        font-size: 17px;
+        font-weight: bold;
+        color: #2d2f54;
+        text-align: center;
+    }
+    
+
+    .card-item button {
+        background-color: #2d2f54;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 15px;
+        cursor: pointer;
+        display: block;
+        margin: 10px auto 10px;      
+        transition: 0.3s ease;
+    }
+    
+    .card-item {
+        width: 100%;  /* Full width on small screens */
+    }
+
+    @media(max-width: 768px) {
+        .titulo1 {
+            width: 80%;
+            font-size: 18px;
+        }
+    }
+
+    
+    /* Footer */
+    footer {
+        background-color: #2d2f54;
+        color: #cebbff;
+        padding: 40px 0;
+    }
+    
+    footer .line-footer1 h2 {
+        font-size: 1.8rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    footer .line-footer1 form input[type=email] {
+        width: 300px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #cebbff;
+        color: #cebbff;
+        padding: 10px;
+    }
+    
+    footer .line-footer1 form input[type=submit] {
+        width: 100px;
+        height: 30px;
+        background-color: #cebbff;
+        margin-left: 10px;
+        border: 0;
+        color: #2d2f54;
+        cursor: pointer;
+        transition: .3s;
+    }
+    
+    footer .line-footer2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
+    }
+    
+    footer .box-line-footer {
+        width: calc(100% / 3);
+        text-align: left;
+    }
+    
+    footer .box-line-footer img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    
+    footer .box-line-footer h3 {
+        color: #fff;
+        font-size: 1.2rem;
+    }
+    
+    footer .line-footer2 .box-line-footer a {
+        color: #cebbff;
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    footer .line-footer2 .box-line-footer p {
+        font-size: 15px;
+    }
+    
+    footer .line-footer3 {
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    .card-item button:hover {
+        transform: scale(1.1);      /* efeito de zoom qnd passa o mouse */
+    }
+
+
+.desconto {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #2d2d2d;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+/*parte do footer*/
+.logo img{
+    padding-top: 10px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+            .interface{
+                max-width: 1280px;
+                margin: 0 auto;
+            }
+
+            footer{
+                background-color: #2d2f54;
+                color: #cebbff;
+                padding: 40px 0;
+            }
+
+
+            footer .line-footer1{
+                text-align: center;
+                padding-bottom: 40px;
+            }
+
+            .line-footer1 h2{
+                font-size: 1.8rem;
+                font-weight: bolder;
+            }
+
+            .line-footer1 p{
+                font-size: 1rem;
+                font-weight: 200;
+                margin: 10px 0 20px 0 ;
+            }
+
+            .line-footer1 form{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .line-footer1 form input[type=email]{
+                width: 300px;
+                height: 40px;
+                background: transparent;
+                border: 2px solid #cebbff;
+                color:#cebbff;
+                padding: 10px;
+                outline: 0;
+            }
+
+            .line-footer1 form input[type=submit]{
+                width: 100px;
+                height: 30px;
+                background-color: #cebbff;
+                margin-left: 10px;
+                border: 0;
+                color: #2d2f54;
+                cursor: pointer;
+                font-family: 'Poppins', sans-serif;
+                transition: .3s;
+            }
+
+            .line-footer1 form input[type=submit]:hover{
+                background-color: #e0d3ff;
+                color: #9e84df;
+            }
+
+            footer .line-footer2{         
+            padding: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            }
+
+            footer .line-footer2 .box-line-footer{
+            width: calc(100% / 3);
+            }
+
+            footer .box-line-footer {
+                text-align: left; 
+            }
+            footer .box-line-footer {
+                position: relative;
+            }
+            
+            footer .box-line-footer img{
+                max-width: 200px;
+                margin-bottom: 10px;
+                }
+
+            .line-footer2 .box-line-footer h3{
+                color: #fff;
+                margin-bottom: 10px;
+                font-weight: 500;
+                margin: 0;
+                padding: 0; 
+                margin-bottom: 10px;  
+                font-size: 1.2rem;    
+            }
+
+            .line-footer2 .box-line-footer a{
+                margin: 0; 
+                padding: 0; 
+                font-size: 0.9rem;
+                color: #cebbff;
+                display: block;
+                margin-bottom: 8px; 
+            }
+
+            .box-line-footer .botao-redes{
+                display: flex;
+            }
+
+            .box-line-footer .botao-redes a{
+                padding-top: 10px;
+                display: inline-block;
+            }
+
+            .line-footer2 .box-line-footer img {
+                margin-left: 135px;
+            }
+
+
+            .line-footer2 .box-line-footer p {
+                padding-left: 145px;
+                font-size: 15px;
+            }
+
+            footer .line-footer1{
+                text-align: center;
+                width: 100%;
+                padding-bottom: 40px;
+            }
+
+            .linha1 {
+                border: 0;             
+                height: 0.5px;
+                background-color: #cebbff;
+                margin: 5px 0;
+              }
+
+              .linha2 {
+                border: 0;             
+                height: 0.5px;
+                background-color: #cebbff;
+                margin: 5px 0;
+              }
+
+
+            .box-line-footer .botao-redes button{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+                cursor: pointer;
+                margin-right: 12px;
+                transition: 0.4s; 
+            }
+
+            .box-line-footer .botao-redes button:hover{
+                color: #9696d2;
+                background-color: #d7c7ff;
+                border-color: #bca2fd;    
+            }
+
+            .links-footer a {
+                text-decoration: none;
+                font-weight: 100;
+                transition: 0.3s ease;
+              }
+              
+              .links-footer a:hover {
+                color: #fff;
+                text-decoration: none;
+              }
+
+            footer .line-footer3{
+                padding-top: 15px;
+                text-align: center;
+            }
